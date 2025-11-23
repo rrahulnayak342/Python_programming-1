@@ -1,5 +1,3 @@
-# Simple To-Do List Application in Python
-
 todo_list = []
 
 def show_menu():
@@ -32,7 +30,7 @@ def update_task():
         todo_list[task_no - 1]["task"] = new_task
         print("Task updated successfully!")
     except:
-        print("Invalid task number!")
+        print("Invalid")
 
 def delete_task():
     view_tasks()
@@ -52,7 +50,6 @@ def mark_completed():
     except:
         print("Invalid task number!")
 
-# -------- Main Program Loop --------
 while True:
     show_menu()
     choice = input("Enter your choice: ")
@@ -71,4 +68,4 @@ while True:
         print("Exiting... Thank you!")
         break
     else:
-        print("Invalid choice! Please try again.")
+        print("Invalid choice!")
